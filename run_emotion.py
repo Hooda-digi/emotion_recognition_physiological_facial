@@ -32,7 +32,7 @@ def load_image_model(weight_file):
     model.add(Dense(7, activation='softmax'))
 
     # Load weights into the model
-    model=load_weights(weight_file)
+    model.load_weights(weight_file)
     return model
 
 
